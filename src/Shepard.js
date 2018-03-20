@@ -12,6 +12,12 @@ function Pen() {
   Pen.prototype.headCount = function () {
     return this._pen.length;
   };
+
+  Pen.prototype.listAll = function () {
+    for (var i = 0; i < this._pen.length; i++) {
+      console.log(this._pen[i].get());
+    }
+  };
 };
 
 

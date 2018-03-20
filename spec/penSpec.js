@@ -14,7 +14,7 @@ describe("Pen", function(){
   it ("should add the sheep to pen", function(){
     pen.add(fluff);
     pen.add(penny);
-    expect(pen.get()).toEqual(jasmine.arrayContaining([penny, fluff]));
+    expect(pen.get()).toEqual(jasmine.arrayContaining([fluff, penny]));
   });
 
   it ("should return size of pen", function(){
@@ -22,6 +22,5 @@ describe("Pen", function(){
     pen.add(fluff);
     expect(pen.headCount()).toEqual(2);
   });
-
 
 });
