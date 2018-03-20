@@ -13,7 +13,12 @@ function Sheep(name){
 
   Sheep.prototype.get = function () {
     return this._name;
+  };
 
+  // to change name otherwise constructor
+// does the job of setting name anyway
+  Sheep.prototype.set = function (name) {
+    this._name = name;
   };
 
 }
