@@ -6,3 +6,14 @@ function Pen() {
   };
 
 };
+
+
+function Sheep(name){
+  this._name = name;
+
+  Sheep.prototype.get = function () {
+    return this._name;
+
+  };
+
+}
